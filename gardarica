@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<img id="myImg" src="images/gal/1.jpg" width="107" height="98"></img>
+
+
+<p>Math.floor(Math.random() * 8) + 1) returns a random integer between 1 and 8 
+(both included):</p>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var url="images/gal/";
+        var x = Math.floor((Math.random() * 8) + 1); //de la 1 pina la 8
+        var jpg=".jpg";
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+            document.getElementById("myImg").src = url+x+jpg;
+        }
+    }
+</script>
+</body>
+</html>
