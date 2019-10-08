@@ -1,0 +1,54 @@
+<!-- Doar in aceste blocuri am facut schimbari -->
+<!-- photo 3 x 3 -->
+            <div class="container">
+                <div class="row">    
+                    <!-- 1 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-once revealator-within">
+                        <img id="myImg_1" alt="" data-src="images/gal/1.jpg" class="loaded img-responsive_gs" src="images/gal/1.jpg" data-was-processed="true">
+                    </div>    
+                    <!-- 2 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay1 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/2.jpg" class="loaded img-responsive_gs" src="images/gal/2.jpg" data-was-processed="true">
+                    </div>     
+                    <!-- 3 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay2 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/3.jpg" class="loaded img-responsive_gs" src="images/gal/3.jpg" data-was-processed="true">
+                     </div>     
+                    <!-- 4 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay3 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/4.jpg" class="loaded img-responsive_gs" src="images/gal/4.jpg" data-was-processed="true">
+                    </div>    
+                    <!-- 5 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay4 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/5.jpg" class="loaded img-responsive_gs" src="images/gal/5.jpg" data-was-processed="true">
+                    </div>     
+                    <!-- 6 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay5 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/6.jpg" class="loaded img-responsive_gs" src="images/gal/6.jpg" data-was-processed="true">
+                     </div>             
+                    <!-- 7 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay6 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/7.jpg" class="loaded img-responsive_gs" src="images/gal/7.jpg" data-was-processed="true">
+                    </div>    
+                    <!-- 8 -->
+                    <div class="col-3 col-md-3 col-sm-6 col-xs-12 revealator-slideup revealator-delay7 revealator-once revealator-within">
+                        <img alt="" data-src="images/gal/8.jpg" class="loaded img-responsive_gs" src="images/gal/8.jpg" data-was-processed="true">
+                    </div>                  
+                </div>           
+            </div>
+ 
+ 
+  <script>
+        window.onload= function() {myFunction()}; //la fiecare refresh
+    
+        function myFunction() {
+            var url_1="images/gal/"; //primul bloc de fotografii-mapa 1
+            var url_2="??";          //a doua tematica -mapa 2
+            var url_3="??";          //a treia tematica -mapa 3
+            var x = Math.floor((Math.random() * 8) + 1); //de la 1 pina la 8
+            var y= "??";                                 //numarul de fotografii din mapa de la 1-..
+            var jpg=".jpg";                              //formatul la fotagrafii
+            document.getElementById("myImg_1").src = url_1+x+jpg; // ID-ul din <div> se leaga de url
+         // document.getElementById("myImg_2").src = url_2+y+jpg; // -EXEMPLU            
+        }
+    </script>
